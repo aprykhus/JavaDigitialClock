@@ -7,7 +7,10 @@ class DigitalClock {
 	
 	public static void cls() {
 		try {
-			new ProcessBuilder("cmd", "/c","cls").inheritIO().start().waitFor();
+			if (System.getProperty("os.name").contains("Windows"))
+				new ProcessBuilder("cmd", "/c","cls").inheritIO().start().waitFor();
+			else
+				System.out.print("\033\143");
 		} catch(Exception E) {
 			System.out.println(E);
 		}
