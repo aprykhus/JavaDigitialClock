@@ -3,7 +3,7 @@
 import java.lang.Thread;
 import java.time.LocalTime;
 
-class LocalTimeExample {
+class DigitalClock {
 	
 	public static void cls() {
 		try {
