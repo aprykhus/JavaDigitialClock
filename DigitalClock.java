@@ -1,4 +1,5 @@
 // Windows 10 - JavaSE 14
+// Console app Digital Clock
 
 import java.lang.Thread;
 import java.time.LocalTime;
